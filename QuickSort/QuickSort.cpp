@@ -5,7 +5,7 @@ using namespace std;
 
 void QuickSort(vector<int>& nums, int l, int r)
 {
-	if (r - l <= 1) // ·Öµ½Ê£Óà 1 ¸öÔªËØÎªÖ¹
+	if (r - l <= 1) // åˆ†åˆ°å‰©ä½™ 1 ä¸ªå…ƒç´ ä¸ºæ­¢
 		return;
 
 	int i = l, j = r - 1, key = nums[i];
