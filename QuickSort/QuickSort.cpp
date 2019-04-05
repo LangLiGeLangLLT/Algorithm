@@ -20,10 +20,10 @@ void QuickSort(vector<int>& nums, int l, int r)
 			++i;
 		nums[j] = nums[i];
 	}
-	nums[j] = key;
+	nums[i] = key;
 
-	QuickSort(nums, l, j);
-	QuickSort(nums, j + 1, r);
+	QuickSort(nums, l, i);
+	QuickSort(nums, i + 1, r);
 }
 
 int main()
