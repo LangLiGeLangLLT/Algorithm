@@ -29,17 +29,18 @@ vector<int> TopoSortByBFS(const vector<vector<int>>& G, vector<int> indegree, in
 	return ans;
 }
 
-void TopoSortByDFS(int v, const vector<vector<int>>& G, vector<int>& indegree, vector<int>& ans)
+void TopoSortByDFS(int v, const vector<vector<int>>& G, vector<int>& visit, vector<int>& ans)
 {
-	ans.push_back(v);
-
+	visit[v] = 0;
+	
 	for (int u : G[v])
 	{
-		if (--indegree[u] == 0)
-		{
-			TopoSortByDFS(u, G, indegree, ans);
-		}
+		if (visit[u] == 0) return;
+		if (visit[u] == 0x3f3f3f3f) TopoSortByDFS(u, G, visit, ans);
 	}
+
+	visit[v] = 1;
+	ans.push_back(v);
 }
 
 int main()
@@ -64,14 +65,15 @@ int main()
 	cout << endl;
 
 	// DFS
-	vector<int> indegreeDFS(indegree.begin(), indegree.end());
+	vector<int> visit(N + 1, 0x3f3f3f3f);
 	vector<int> ans;
 
 	for (int v = 1; v <= N; ++v)
 	{
-		if (indegree[v] == 0)
-			TopoSortByDFS(v, G, indegreeDFS, ans);
+		if (visit[v] == 0x3f3f3f3f)
+			TopoSortByDFS(v, G, visit, ans);
 	}
+	reverse(ans.begin(), ans.end());
 
 	for (int num : ans) cout << num << " ";
 
