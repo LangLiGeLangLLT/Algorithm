@@ -29,6 +29,8 @@ vector<int> TopoSortByBFS(const vector<vector<int>>& G, vector<int> indegree, in
 	return ans;
 }
 
+// 0：正在访问，1：访问成功，0x3f3f3f3f：未访问
+
 void TopoSortByDFS(int v, const vector<vector<int>>& G, vector<int>& visit, vector<int>& ans)
 {
 	visit[v] = 0;
