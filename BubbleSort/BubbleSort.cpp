@@ -4,6 +4,9 @@
 
 using namespace std;
 
+// 总共进行 n - 1 轮，若不再交换，则已排好序。
+// 每轮都将较大的数进行冒泡，放在数组最后的位置。
+
 void BubbleSort(vector<int>& nums)
 {
 	bool hasChanged = true;
