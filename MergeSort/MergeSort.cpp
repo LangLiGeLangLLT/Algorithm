@@ -1,15 +1,13 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 
 using namespace std;
 
-const int MAX_N = 100;
-
-int temp[MAX_N]; // ¸¨Öú´æ´¢
+vector<int> temp; // è¾…åŠ©å­˜å‚¨
 
 void MergeSort(vector<int>& nums, int l, int r)
 {
-	if (r - l <= 1) // ·Öµ½Ê£Óà 1 ¸öÔªËØÎªÖ¹
+	if (r - l <= 1) // åˆ†åˆ°å‰©ä½™ 1 ä¸ªå…ƒç´ ä¸ºæ­¢
 		return;
 
 	int m = l + (r - l) / 2;
@@ -32,12 +30,15 @@ void MergeSort(vector<int>& nums, int l, int r)
 
 int main()
 {
-	vector<int> nums = { 9,1,8,2,5 };
+	vector<int> nums = { 2, 1, 7, 9, 5, 8 };
+	temp.resize(nums.size());
+
+	for (int num : nums) cout << num << " ";
 
 	MergeSort(nums, 0, nums.size());
 
-	for (int i = 0; i < nums.size(); ++i)
-		cout << nums[i] << " ";
+	cout << endl;
+	for (int num : nums) cout << num << " ";
 
 	return 0;
 }
