@@ -45,6 +45,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kruskal", "Kruskal\Kruskal.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BubbleSort", "BubbleSort\BubbleSort.vcxproj", "{19DB8E9A-3CAE-4D48-88C4-FFB66E03DFAA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InsertionSort", "InsertionSort\InsertionSort.vcxproj", "{E5D9D2D9-144E-41B4-A336-306AB34F1497}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -221,6 +223,14 @@ Global
 		{19DB8E9A-3CAE-4D48-88C4-FFB66E03DFAA}.Release|x64.Build.0 = Release|x64
 		{19DB8E9A-3CAE-4D48-88C4-FFB66E03DFAA}.Release|x86.ActiveCfg = Release|Win32
 		{19DB8E9A-3CAE-4D48-88C4-FFB66E03DFAA}.Release|x86.Build.0 = Release|Win32
+		{E5D9D2D9-144E-41B4-A336-306AB34F1497}.Debug|x64.ActiveCfg = Debug|x64
+		{E5D9D2D9-144E-41B4-A336-306AB34F1497}.Debug|x64.Build.0 = Debug|x64
+		{E5D9D2D9-144E-41B4-A336-306AB34F1497}.Debug|x86.ActiveCfg = Debug|Win32
+		{E5D9D2D9-144E-41B4-A336-306AB34F1497}.Debug|x86.Build.0 = Debug|Win32
+		{E5D9D2D9-144E-41B4-A336-306AB34F1497}.Release|x64.ActiveCfg = Release|x64
+		{E5D9D2D9-144E-41B4-A336-306AB34F1497}.Release|x64.Build.0 = Release|x64
+		{E5D9D2D9-144E-41B4-A336-306AB34F1497}.Release|x86.ActiveCfg = Release|Win32
+		{E5D9D2D9-144E-41B4-A336-306AB34F1497}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
