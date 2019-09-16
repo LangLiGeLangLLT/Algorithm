@@ -31,8 +31,7 @@ vector<int> TopoSortByBFS(const vector<vector<int>>& G, vector<int> indegree, in
 
 void TopoSortByDFS(int v, const vector<vector<int>>& G, vector<int>& indegree, vector<int>& ans)
 {
-	if (indegree[v] == 0)
-		ans.push_back(v);
+	ans.push_back(v);
 
 	for (int u : G[v])
 	{
