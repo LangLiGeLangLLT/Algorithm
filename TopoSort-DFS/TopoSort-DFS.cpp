@@ -6,7 +6,7 @@ using namespace std;
 
 // DFS
 
-bool TopoSort(int v, const vector<vector<int>> G, vector<int>& visit, vector<int>& ans)
+bool TopoSort(int v, const vector<vector<int>>& G, vector<int>& visit, vector<int>& ans)
 {
 	visit[v] = 0; // 正在访问
 
