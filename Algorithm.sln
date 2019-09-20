@@ -51,6 +51,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TopoSort-BFS", "TopoSort-BF
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TopoSort-DFS", "TopoSort-DFS\TopoSort-DFS.vcxproj", "{E988DFAC-469E-4FF4-9624-08C89D5F6939}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnionFind", "UnionFind\UnionFind.vcxproj", "{AFD17EE7-B876-4EFB-8D99-74547D5BCE3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -251,6 +253,14 @@ Global
 		{E988DFAC-469E-4FF4-9624-08C89D5F6939}.Release|x64.Build.0 = Release|x64
 		{E988DFAC-469E-4FF4-9624-08C89D5F6939}.Release|x86.ActiveCfg = Release|Win32
 		{E988DFAC-469E-4FF4-9624-08C89D5F6939}.Release|x86.Build.0 = Release|Win32
+		{AFD17EE7-B876-4EFB-8D99-74547D5BCE3D}.Debug|x64.ActiveCfg = Debug|x64
+		{AFD17EE7-B876-4EFB-8D99-74547D5BCE3D}.Debug|x64.Build.0 = Debug|x64
+		{AFD17EE7-B876-4EFB-8D99-74547D5BCE3D}.Debug|x86.ActiveCfg = Debug|Win32
+		{AFD17EE7-B876-4EFB-8D99-74547D5BCE3D}.Debug|x86.Build.0 = Debug|Win32
+		{AFD17EE7-B876-4EFB-8D99-74547D5BCE3D}.Release|x64.ActiveCfg = Release|x64
+		{AFD17EE7-B876-4EFB-8D99-74547D5BCE3D}.Release|x64.Build.0 = Release|x64
+		{AFD17EE7-B876-4EFB-8D99-74547D5BCE3D}.Release|x86.ActiveCfg = Release|Win32
+		{AFD17EE7-B876-4EFB-8D99-74547D5BCE3D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
