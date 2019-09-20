@@ -12,7 +12,7 @@ void permutation(const vector<int>& nums, int pos, int n)
 	if (pos >= n)
 	{
 		// 这里编写需要对 nums 进行的操作
-		for (const int& index : tmp) cout << nums[index] << " ";
+		for (int index : tmp) cout << nums[index] << " ";
 		cout << endl;
 
 		return;
